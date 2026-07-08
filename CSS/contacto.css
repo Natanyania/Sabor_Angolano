@@ -32,7 +32,6 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
     background-color: aliceblue;
     height: 9vh;
     position: fixed;
