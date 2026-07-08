@@ -470,6 +470,7 @@ transform: scale(1.05);
     z-index: 1000;
 }
 
+@media (max-width: 768px){
 
     @media (max-width: 768px) {
   .nav-mobile-actions {
