@@ -5,16 +5,33 @@
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: white;
     color: #222;
-} 
+}
+
+/* ===== LINKS ===== */
+
+a{
+   color: black; 
+   text-decoration: none;
+   transition: 0.3s;
+   font-size: 12px;
+}
+
+a:hover{
+    opacity: 0.7;   
+}
+
+.logo{
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: brown;
+}
 
 /* ===== NAV ===== */
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -30,16 +47,15 @@ nav{
 }
 
 .nav-list{
-  list-style: none;
-  display: flex;
-
+    list-style: none;
+    display: flex;
 }
 
-.nav-list li {
-  letter-spacing: 2px;
-  margin-left: 32px;
-  
+.nav-list li{
+    letter-spacing: 2px;
+    margin-left: 32px;
 }
+
 .nav-list a {
     position: relative;
     display: inline-block;
@@ -63,6 +79,20 @@ nav{
 .nav-list a:hover::after {
     width: 100%;
 }
+
+/* ===== HAMBURGER ===== */
+
+#menu-toggle{
+    display: none;
+}
+
+.hamburger{
+    display: none;
+    font-size: 32px;
+    cursor: pointer;
+    color: brown;
+}
+
 /* ===== HERO ===== */
 
 .hero-politica{
@@ -82,7 +112,25 @@ nav{
     font-size: 18px;
 }
 
-/* ===== CONTEÚDO ===== */
+.hero-termos{
+    background-color: #c45500;
+    text-align: center;
+    padding: 80px 20px;
+    margin-top: 9vh; /* importante por causa do nav fixo */
+}
+
+.hero-termos h1{
+    color: white;
+    font-size: 46px;
+    margin-bottom: 20px;
+}
+
+.hero-termos p{
+    color: white;
+    font-size: 18px;
+}
+
+/* ===== CONTEÚDO - POLÍTICA ===== */
 
 .politica{
     padding: 70px 10%;
@@ -113,6 +161,50 @@ nav{
 }
 
 .politica-container li{
+    color: #555;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+/* ===== CONTEÚDO - TERMOS ===== */
+
+.termos{
+    padding: 70px 10%;
+}
+
+.termos-container{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.termos-container h2{
+    color: #c45500;
+    font-size: 30px;
+    margin-top: 45px;
+    margin-bottom: 20px;
+}
+
+.termos-container h3{
+    color: #04122b;
+    font-size: 22px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.termos-container p{
+    color: #555;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.termos-container ul{
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+
+.termos-container li{
     color: #555;
     font-size: 17px;
     line-height: 1.8;
@@ -181,162 +273,6 @@ nav{
     font-size: 13px;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/* ===== LINKS ===== */
-
-a{
-   color: black; 
-   text-decoration: none;
-   transition: 0.3s;
-   font-size: 12px;
-}
-
-a:hover{
-    opacity: 0.7;   
-}
-
-.logo{
-    font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: brown;
-}
-
-/* ===== NAV ===== */
-
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: aliceblue;
-
-    height: 9vh;
-    width: 100%;
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10;
-
-    padding: 0 40px;
-}
-
-.nav-list{
-    list-style: none;
-    display: flex;
-    gap: 30px;
-}
-
-.nav-list li{
-    letter-spacing: 2px;
-}
-
-/* ===== HAMBURGER ===== */
-
-#menu-toggle{
-    display: none;
-}
-
-.hamburger{
-    display: none;
-    font-size: 32px;
-    cursor: pointer;
-    color: brown;
-}
-
-/* ===== HERO ===== */
-
-.hero-termos{
-    background-color: #c45500;
-    text-align: center;
-    padding: 80px 20px;
-
-    margin-top: 9vh; /* importante por causa do nav fixo */
-}
-
-.hero-termos h1{
-    color: white;
-    font-size: 46px;
-    margin-bottom: 20px;
-}
-
-.hero-termos p{
-    color: white;
-    font-size: 18px;
-}
-
-/* ===== CONTEÚDO ===== */
-
-.termos{
-    padding: 70px 10%;
-}
-
-.termos-container{
-    max-width: 1000px;
-    margin: auto;
-}
-
-.termos-container h2{
-    color: #c45500;
-    font-size: 30px;
-    margin-top: 45px;
-    margin-bottom: 20px;
-}
-
-.termos-container h3{
-    color: #04122b;
-    font-size: 22px;
-    margin-top: 25px;
-    margin-bottom: 15px;
-}
-
-.termos-container p{
-    color: #555;
-    font-size: 17px;
-    line-height: 1.8;
-    margin-bottom: 20px;
-}
-
-.termos-container ul{
-    margin-left: 25px;
-    margin-bottom: 25px;
-}
-
-.termos-container li{
-    color: #555;
-    font-size: 17px;
-    line-height: 1.8;
-    margin-bottom: 10px;
-}
-
-/* ===== FOOTER ===== */
-
-.footer{
-    background-color: #04122b;
-    padding: 40px 5%;
-}
-
-.footer-container{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 40px;
-}
-
-.footer-box{
-    flex: 1;
-    min-width: 250px;
-}
-
 /* ===== RESPONSIVO ===== */
 
 @media (max-width: 768px) {
@@ -379,7 +315,27 @@ nav{
         display: flex;
     }
 
+    .nav-list li{
+        margin-left: 0;
+    }
+
     /* HERO */
+    .hero-politica{
+        padding: 100px 20px 60px;
+    }
+
+    .hero-politica h1{
+        font-size: 30px;
+    }
+
+    .hero-politica p{
+        font-size: 15px;
+    }
+
+    .hero-termos{
+        padding: 100px 20px 60px;
+    }
+
     .hero-termos h1{
         font-size: 30px;
     }
@@ -389,6 +345,19 @@ nav{
     }
 
     /* CONTEÚDO */
+    .politica{
+        padding: 50px 20px;
+    }
+
+    .politica-container h2{
+        font-size: 24px;
+    }
+
+    .politica-container p,
+    .politica-container li{
+        font-size: 15px;
+    }
+
     .termos{
         padding: 50px 20px;
     }
