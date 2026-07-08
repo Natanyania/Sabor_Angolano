@@ -1,0 +1,126 @@
+
+/* ===== BASE ===== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* ===== 404 PAGE ===== */
+
+.pagina-404{
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 20px;
+}
+
+.conteudo-404{
+    width: 100%;
+    max-width: 650px;
+
+    background-color: white;
+
+    padding: 60px 40px;
+    border-radius: 18px;
+
+    text-align: center;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.codigo-erro{
+    display: block;
+    font-size: 110px;
+    font-weight: bold;
+
+    color: #c45500;
+
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.conteudo-404 h1{
+    font-size: 36px;
+    color: #04122b;
+    margin-bottom: 20px;
+}
+
+.conteudo-404 p{
+    font-size: 17px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+/* BOTÕES */
+
+.botoes-404{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn-voltar{
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 10px;
+
+    text-decoration: none;
+    font-size: 16px;
+
+    transition: 0.3s;
+
+    background-color: #c45500;
+    color: white;
+}
+
+.btn-voltar:hover{
+    background-color: #a64700;
+}
+
+/* ===== RESPONSIVO ===== */
+
+@media (max-width: 768px) {
+  .nav-mobile-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 768px){
+
+    .conteudo-404{
+        padding: 40px 20px;
+    }
+
+    .codigo-erro{
+        font-size: 70px;
+    }
+
+    .conteudo-404 h1{
+        font-size: 26px;
+    }
+
+    .conteudo-404 p{
+        font-size: 15px;
+    }
+
+    .btn-voltar{
+        width: 100%;
+        text-align: center;
+    }
+
+}

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/blog.css">
+     <link rel="stylesheet" href="../CSS/btn_voltar_topo.css">
+     <link rel="stylesheet" href="../CSS/dark-mode.css">
+    <title>Blog</title>
+</head>
+
+<body>
+
+<header>
+    <nav>
+
+        <a class="logo" href="index.html">Sabor Angolano</a>
+
+        <!-- checkbox escondido -->
+           <input type="checkbox" id="menu-toggle">
+
+           <div class="nav-mobile-actions">
+
+    <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Alternar tema claro/escuro" title="Alternar tema claro/escuro">
+        <span class="theme-toggle-icon">🌙</span>
+    </button>
+
+    <!-- ícone hamburger -->
+    <label for="menu-toggle" class="hamburger">
+        ☰
+    </label>
+
+    </div>
+
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Sobre_nós.htm">Sobre nós</a></li>
+            <li><a href="Produto.html">Produtos e Serviços</a></li>
+            <li><a href="Galeria.html">Galeria de fotos</a></li>
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+            <li><a href="contacto.html">Contactos</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+
+<section class="hero-blog">
+
+    <h1>Blog</h1>
+
+    <p>
+        Histórias, receitas e dicas do mundo da gastronomia
+    </p>
+
+</section>
+<!-- BLOG CARD -->
+<section class="article-card">
+
+    <div class="article-image">
+        <img src="../media/Catering.jpg" alt="Imagem do artigo">
+    </div>
+
+    <div class="article-content">
+
+        <span class="article-category">Receitas</span>
+
+        <h2 class="article-title">
+            Os Segredos de uma feijoada perfeita
+        </h2>
+
+        <p class="article-description">
+            Descubra as técnicas tradicionais para preparar um dos pratos mais emblemáticos da gastronomia Angolana.
+        </p>
+
+        <div class="article-meta">
+
+            <span class="article-author">
+                👤 Chef Eunice Filipe
+            </span>
+
+            <span class="article-date">
+                📅 25 Março 2026
+            </span>
+
+        </div>
+
+        <a href="#" class="article-link">Ler Mais →</a>
+
+    </div>
+
+</section>
+
+<!-- ARTIGOS RECENTES -->
+<section class="artigos-recentes">
+
+  <h2 class="artigos-titulo">Artigos Recentes</h2>
+
+  <div class="artigos-grid">
+
+    <div class="artigo-card">
+      <div class="artigo-imagem">
+        <img src="../media/vinhos.jpg" alt="Harmonização de Vinhos">
+      </div>
+      <div class="artigo-conteudo">
+        <span class="artigo-categoria">Vinhos</span>
+        <h3 class="artigo-title">Harmonização de Vinhos: Guia Completo</h3>
+        <p class="artigo-descricao">Aprenda a escolher o vinho perfeito para cada tipo de prato e impressione os seus convidados.</p>
+        <div class="artigo-meta">
+          <span>👤 Elvis Marra</span>
+          <span>📅 18 de Maio 2026</span>
+        </div>
+        <a href="#" class="article-link">Ler Mais →</a>
+      </div>
+    </div>
+
+    <div class="artigo-card">
+      <div class="artigo-imagem">
+        <img src="../media/Ingredientes.jpg" alt="Ingredientes Frescos">
+      </div>
+      <div class="artigo-conteudo">
+        <span class="artigo-categoria">Gastronomia</span>
+        <h3 class="artigo-title">A Importância dos Ingredientes Frescos</h3>
+        <p class="artigo-descricao">Conheça os nossos fornecedores locais e entenda por que a qualidade dos ingredientes faz toda a diferença.</p>
+        <div class="artigo-meta">
+          <span>👤 Chef Gergina Marfil</span>
+          <span>📅 15 Março 2026</span>
+        </div>
+        <a href="#" class="article-link">Ler Mais →</a>
+      </div>
+    </div>
+
+    <div class="artigo-card">
+      <div class="artigo-imagem">
+        <img src="../media/Catering.jpg" alt="História da Gastronomia">
+      </div>
+      <div class="artigo-conteudo">
+        <span class="artigo-categoria">História</span>
+        <h3 class="artigo-title">História da Gastronomia Angolana</h3>
+        <p class="artigo-descricao">Uma viagem pela rica história culinária de Angola, desde as especiarias das descobertas até hoje.</p>
+        <div class="artigo-meta">
+          <span>👤 Pedro Costa</span>
+          <span>📅 10 Março 2026</span>
+        </div>
+        <a href="#" class="article-link">Ler Mais →</a>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter">
+
+  <h2 class="newsletter-titulo">Subscreva a Nossa Newsletter</h2>
+
+  <p class="newsletter-descricao">
+    Receba as últimas novidades, receitas e dicas gastronómicas diretamente no seu email.
+  </p>
+
+ <div class="newsletter-form">
+  <input type="email" id="newsletter-email" class="newsletter-input" placeholder="O seu email">
+  <button type="button" class="newsletter-btn" onclick="subscrever()">Subscrever</button>
+  <p id="newsletter-msg" class="newsletter-msg"></p>
+</div>
+
+</section>
+
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-box">
+            <h3>Sabor Angolano</h3>
+            <p>
+                Autêntica cozinha angolana com ingredientes frescos e
+                receitas tradicionais.
+            </p>
+        </div>
+
+        <div class="footer-box">
+            <h4>Links Úteis</h4>
+
+            <a href="política_e_privacidade.html">Política de Privacidade</a>
+            <a href="Termos_e_condições.html">Termos e Condições</a>
+        
+
+        </div>
+
+        <div class="footer-box">
+            <h4>Mapa do site</h4>
+
+            <a href="index.html">Home</a>
+            <a href="Sobre_nós.htm">Sobre nós</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+
+        <div class="footer-box">
+            <h4>Contacto</h4>
+
+            <p>Benfica</p>
+            <p>Luanda, Angola</p>
+            <p>Tel: +244 936 123 456</p>
+            <p>Email: info@saborangolano.ao</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Sabor Angolano. Todos os direitos reservados.</p>
+    </div>
+
+</footer>
+
+<button type="button" id="back-to-top" class="back-to-top" aria-label="Voltar ao topo" title="Voltar ao topo">
+    ↑
+</button>
+<script src="../JS/Btn_voltar_topo.js"></script>
+<script src="../JS/theme.js"></script>
+<script src="../JS/subscrever.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/galeria.css">
+    <link rel="stylesheet" href="../CSS/btn_voltar_topo.css">
+    <link rel="stylesheet" href="../CSS/estilo_setas_galeria.css">
+    <link rel="stylesheet" href="../CSS/dark-mode.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+    <nav>
+
+        <a class="logo" href="index.html">Sabor Angolano</a>
+
+        <!-- checkbox escondido -->
+<input type="checkbox" id="menu-toggle">
+
+<div class="nav-mobile-actions">
+
+    <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Alternar tema claro/escuro" title="Alternar tema claro/escuro">
+        <span class="theme-toggle-icon">🌙</span>
+    </button>
+
+    <!-- ícone hamburger -->
+    <label for="menu-toggle" class="hamburger">
+        ☰
+    </label>
+
+</div>
+
+        <ul class="nav-list">
+             <li><a href="index.html">Home</a></li>
+            <li><a href="Sobre_nós.htm">Sobre nós</a></li>
+            <li><a href="Produto.html">Produtos e Serviços</a></li>
+            <li><a href="Galeria.html">Galeria de fotos</a></li>
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+            <li><a href="contacto.html">Contactos</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+    <section class="hero-galeria">
+    <h1>Galeria de Fotos</h1>
+    <p>Momentos especiais capturados no Sabor & Arte</p>
+</section>
+
+<div class="menu-galeria">
+    <button class="ativo" onclick="filtrar('todos')">Todos</button>
+    <button onclick="filtrar('pratos')">Pratos</button>
+    <button onclick="filtrar('bebidas')">Bebidas</button>
+    <button onclick="filtrar('ambiente')">Ambiente</button>
+</div>
+
+<section class="galeria">
+
+    <div class="galeria-wrapper">
+
+        <button type="button" class="galeria-seta seta-esquerda" aria-label="Foto anterior">‹</button>
+
+        <div class="galeria-container" tabindex="0">
+
+            <!-- AMBIENTE -->
+            <div class="foto ambiente">
+                <img src="../media/Eventos.jpg" alt="Restaurante">
+            </div>
+
+            <!-- PRATOS -->
+            <div class="foto pratos">
+                <img src="../media/mufete.jpg" alt="Prato típico">
+            </div>
+
+            <div class="foto pratos">
+                <img src="../media/feijoada.jpg" alt="Evento">
+            </div>
+
+            <!-- AMBIENTE -->
+            <div class="foto pratos">
+                <img src="../media/Catering.jpg" alt="Catering">
+            </div>
+
+            <!-- BEBIDAS -->
+            <div class="foto bebidas">
+                <img src="../media/Vinhos.jpg" alt="Vinhos">
+            </div>
+
+            <!-- AMBIENTE -->
+            <div class="foto bebidas">
+                <img src="../media/Sobre_nós.jpg" alt="Ambiente">
+            </div>
+
+        </div>
+
+        <button type="button" class="galeria-seta seta-direita" aria-label="Próxima foto">›</button>
+
+    </div>
+
+</section>
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-box">
+            <h3>Sabor Angolano</h3>
+            <p>
+                Autêntica cozinha angolana com ingredientes frescos e
+                receitas tradicionais.
+            </p>
+        </div>
+
+        <div class="footer-box">
+            <h4>Links Úteis</h4>
+
+            <a href="política_e_privacidade.html">Política de Privacidade</a>
+            <a href="Termos_e_condições.html">Termos e Condições</a>
+            <a href="Mapa_do_site.html">Mapa do Site</a>
+
+        </div>
+
+        
+
+        <div class="footer-box">
+            <h4>Contacto</h4>
+
+            <p>Benfica</p>
+            <p>Luanda, Angola</p>
+           <p>Tel: +244 936 123 456</p>
+            <p>Email: info@saborangolano.ao</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Sabor Angolano. Todos os direitos reservados.</p>
+    </div>
+
+</footer>
+
+<script src="../JS/filtar_categoria_galeria.js"></script>
+
+<button type="button" id="back-to-top" class="back-to-top" aria-label="Voltar ao topo" title="Voltar ao topo">
+    ↑
+</button>
+<script src="../JS/Btn_voltar_topo.js"></script>
+<script src="../JS/setas_galeria.js"></script>
+<script src="../JS/theme.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,320 @@
+
+/* ---------- Botão de alternância (sol/lua) ---------- */
+.theme-toggle {
+  background: transparent;
+  border: 1px solid currentColor;
+  color: inherit;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  min-width: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+ 
+}
+
+.theme-toggle:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .nav-mobile-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+}
+
+/* Usado em páginas sem navbar (ex: 404) */
+.theme-toggle-floating {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  margin-left: 0;
+  z-index: 20;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+html[data-theme="dark"] .theme-toggle-floating {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* ============================================================
+   TEMA ESCURO — activado via html[data-theme="dark"]
+   ============================================================ */
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+/* ---------- Base ---------- */
+html[data-theme="dark"] body {
+  background-color: #22242a;
+  color: #e2e2e2;
+}
+
+html[data-theme="dark"] a {
+  color: #e2e2e2;
+}
+
+html[data-theme="dark"] a:hover {
+  color: #ff9f5a;
+}
+
+/* ---------- Navbar (partilhado por todas as páginas) ---------- */
+html[data-theme="dark"] nav,
+html[data-theme="dark"] .nav-list {
+  background-color: #2a2d35;
+}
+
+html[data-theme="dark"] .logo,
+html[data-theme="dark"] .hamburger {
+  color: #ff9f5a;
+}
+
+/* ---------- Hero / secções de topo (todas as variantes) ---------- */
+html[data-theme="dark"] .historia,
+html[data-theme="dark"] .destaques,
+html[data-theme="dark"] .reviews-grid,
+html[data-theme="dark"] .faq,
+html[data-theme="dark"] .galeria,
+html[data-theme="dark"] .menu-galeria,
+html[data-theme="dark"] .contacto,
+html[data-theme="dark"] .politica,
+html[data-theme="dark"] .termos,
+html[data-theme="dark"] .menu-titulo,
+html[data-theme="dark"] .pagina-404 {
+  background-color: #22242a;
+}
+
+/* ---------- Texto / história ---------- */
+html[data-theme="dark"] .texto h2,
+html[data-theme="dark"] .titulo-section,
+html[data-theme="dark"] .faq-title,
+html[data-theme="dark"] .artigos-titulo,
+html[data-theme="dark"] .newsletter-titulo {
+  color: #f0a868;
+}
+
+html[data-theme="dark"] .texto p,
+html[data-theme="dark"] .subtitulo-section,
+html[data-theme="dark"] .faq-subtitle,
+html[data-theme="dark"] .info-card p,
+html[data-theme="dark"] .card-content p,
+html[data-theme="dark"] .item p,
+html[data-theme="dark"] .card-content h3,
+html[data-theme="dark"] .item h3,
+html[data-theme="dark"] .info-box h3 {
+  color: #d0d0d0;
+}
+
+/* ---------- Cards / caixas com fundo claro ---------- */
+html[data-theme="dark"] .card,
+html[data-theme="dark"] .review-card,
+html[data-theme="dark"] .menu-box,
+html[data-theme="dark"] .article-card,
+html[data-theme="dark"] .artigo-card,
+html[data-theme="dark"] .foto,
+html[data-theme="dark"] .faq-item,
+html[data-theme="dark"] .info,
+html[data-theme="dark"] .conteudo-404,
+html[data-theme="dark"] .info-card {
+  background-color: #2c2f38;
+  border-color: #3d4048;
+}
+
+
+html[data-theme="dark"] .item-menu,
+html[data-theme="dark"] .item-menu-topo {
+  border-color: #3d4048;
+}
+
+html[data-theme="dark"] .review-text,
+html[data-theme="dark"] .reviewer-role,
+html[data-theme="dark"] .reviewer-date,
+html[data-theme="dark"] .article-description,
+html[data-theme="dark"] .article-meta,
+html[data-theme="dark"] .artigo-descricao,
+html[data-theme="dark"] .artigo-meta,
+html[data-theme="dark"] .menu-titulo p,
+html[data-theme="dark"] .faq-contact p,
+html[data-theme="dark"] .faq-contact h3,
+html[data-theme="dark"] .info-contacto h2,
+html[data-theme="dark"] .politica-container p,
+html[data-theme="dark"] .politica-container li,
+html[data-theme="dark"] .termos-container p,
+html[data-theme="dark"] .termos-container li,
+html[data-theme="dark"] .info-card li,
+html[data-theme="dark"] .codigo-erro,
+html[data-theme="dark"] .conteudo-404 p {
+  color: #bcbcbc;
+}
+
+html[data-theme="dark"] .reviewer-name,
+html[data-theme="dark"] .menu-box .categoria h3,
+html[data-theme="dark"] .article-title,
+html[data-theme="dark"] .artigo-title,
+html[data-theme="dark"] .item-menu h4,
+html[data-theme="dark"] .conteudo-404 h1,
+html[data-theme="dark"] .politica-container h2,
+html[data-theme="dark"] .termos-container h2,
+html[data-theme="dark"] .termos-container h3 {
+  color: #f0f0f0;
+}
+
+html[data-theme="dark"] .divider {
+  border-top-color: #3d4048;
+}
+
+/* ---------- Botões (mantêm cor de destaque, com contraste ajustado) ---------- */
+html[data-theme="dark"] .btn-menu,
+html[data-theme="dark"] .btn-form,
+html[data-theme="dark"] .btn-email,
+html[data-theme="dark"] .btn-call,
+html[data-theme="dark"] .btn-voltar,
+html[data-theme="dark"] .newsletter-btn {
+  background-color: #d35400;
+  color: #ffffff;
+}
+
+html[data-theme="dark"] .btn-reserva {
+  background-color: #383b44;
+  color: #ff9f5a;
+}
+
+html[data-theme="dark"] .btn-reserva:hover {
+  background-color: #44474f;
+}
+
+/* ---------- Formulário de contacto ---------- */
+html[data-theme="dark"] form {
+  background-color: #2c2f38;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+}
+
+html[data-theme="dark"] .campo label {
+  color: #e2e2e2;
+}
+
+html[data-theme="dark"] .campo input,
+html[data-theme="dark"] .campo textarea,
+html[data-theme="dark"] .campo select,
+html[data-theme="dark"] .newsletter-input {
+  background-color: #22242a;
+  border-color: #4a4d55;
+  color: #f0f0f0;
+}
+
+html[data-theme="dark"] .campo input::placeholder,
+html[data-theme="dark"] .campo textarea::placeholder,
+html[data-theme="dark"] .newsletter-input::placeholder {
+  color: #8a8a8a;
+}
+
+html[data-theme="dark"] .modal-overlay {
+  background: rgba(0, 0, 0, 0.55);
+}
+
+html[data-theme="dark"] .modal-box {
+  background-color: #2c2f38;
+  color: #e2e2e2;
+}
+
+html[data-theme="dark"] .modal-box p {
+  color: #bcbcbc;
+}
+
+/* ---------- Galeria ---------- */
+html[data-theme="dark"] .menu-galeria button {
+  background-color: #2c2f38;
+  color: #e2e2e2;
+  border-color: #4a4d55;
+}
+
+html[data-theme="dark"] .menu-galeria button:hover,
+html[data-theme="dark"] .menu-galeria button.ativo {
+  background-color: #c45500;
+  color: #ffffff;
+}
+
+/* ---------- FAQ ---------- */
+html[data-theme="dark"] .faq-item summary {
+  color: #f0f0f0;
+}
+
+html[data-theme="dark"] .faq-contact {
+  background-color: #2c2f38;
+}
+
+/* ---------- Rodapé --------*/--
+   
+html[data-theme="dark"] .footer {
+  background-color: #060b16;
+}
+
+html[data-theme="dark"] .footer-box p,
+html[data-theme="dark"] .footer-box a,
+html[data-theme="dark"] .footer-bottom p {
+  color: #a9a9a9;
+}
+
+html[data-theme="dark"] .footer-box a:hover {
+  color: #ffffff;
+}
+
+html[data-theme="dark"] .footer-bottom {
+  border-top-color: rgba(255, 255, 255, 0.08);
+}
+
+/* ---------- Secção "Reserve a sua mesa" (já escura) ---------- */
+html[data-theme="dark"] .reserva {
+  background-color: #7a3600;
+}
+
+/* ---------- Botão "Voltar ao topo" (já tem cor própria, só ajusta sombra) ---------- */
+html[data-theme="dark"] .back-to-top {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* ---------- Ícones ficam brancos no escuro ---------- */
+html[data-theme="dark"] .icon i {
+    color: #ffffff;
+}
+
+/* ---------- CTAs (WhatsApp/Instagram/Facebook) ---------- */
+html[data-theme="dark"] .whatsapp-cta {
+    background-color: #2c2f38;
+}
+
+html[data-theme="dark"] .whatsapp-cta strong {
+    color: #f0f0f0;
+}
+
+html[data-theme="dark"] .whatsapp-cta span {
+    color: #bcbcbc;
+}
+
+/* ---------- Cartão do mapa ---------- */
+html[data-theme="dark"] .mapa-card {
+    background-color: #2c2f38;
+}
+
+html[data-theme="dark"] .mapa-card__titulo {
+    color: #f0f0f0;
+}
+
+html[data-theme="dark"] .mapa-card__subtitulo {
+    color: #bcbcbc;
+}
+
+html[data-theme="dark"] .icones {
+    filter: brightness(0) invert(1);
+}
+
+html[data-theme="dark"] .nav-list a::after {
+    background-color: #ff9f5a;
+}

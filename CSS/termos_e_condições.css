@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    color: #222;
+}
+
+/* ===== NAV ===== */
+
+a{
+   color: black; 
+   text-decoration: none;
+   transition: 0.3s;
+   font-size: 12px;
+}
+
+a:hover{
+    opacity: 0.7;   
+}
+
+.logo{
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: brown;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+    height: 9vh;
+    position: fixed;
+    width: 100%;        
+    top: 0;            
+    left: 0;
+    z-index: 10;
+}
+
+.nav-list{
+  list-style: none;
+  display: flex;
+
+}
+
+.nav-list li {
+  letter-spacing: 2px;
+  margin-left: 32px;
+  
+}
+
+.nav-list a {
+    position: relative;
+    display: inline-block;
+}
+
+.nav-list a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: #c45500;
+    transition: width 0.3s ease;
+}
+
+.nav-list a:hover {
+    color: #c45500;
+}
+
+.nav-list a:hover::after {
+    width: 100%;
+}
+/* ===== HERO ===== */
+
+.hero-termos{
+    background-color: #c45500;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero-termos h1{
+    color: white;
+    font-size: 46px;
+    margin-bottom: 20px;
+}
+
+.hero-termos p{
+    color: white;
+    font-size: 18px;
+}
+
+/* ===== CONTEÚDO ===== */
+
+.termos{
+    padding: 70px 10%;
+}
+
+.termos-container{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.termos-container h2{
+    color: #c45500;
+    font-size: 30px;
+    margin-top: 45px;
+    margin-bottom: 20px;
+}
+
+.termos-container h3{
+    color: #04122b;
+    font-size: 22px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.termos-container p{
+    color: #555;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.termos-container ul{
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+
+.termos-container li{
+    color: #555;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+/* ===== FOOTER ===== */
+
+.footer{
+    background-color: #04122b;
+    padding: 40px 5%;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-box{
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-box h3{
+    color: orange;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.footer-box h4{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.footer-box p{
+    color: #bdbdbd;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.footer-box a{
+    display: block;
+    color: #bdbdbd;
+    text-decoration: none;
+    margin-bottom: 18px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.footer-box a:hover{
+    color: white;
+}
+
+.footer-bottom{
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin-top: 50px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.footer-bottom p{
+    color: #bdbdbd;
+    font-size: 13px;
+}
+
+/* ===== HAMBURGER BASE ===== */
+
+#menu-toggle{
+    display: none;
+}
+
+.hamburger{
+    display: none;
+    font-size: 32px;
+    cursor: pointer;
+    color: brown;
+}
+
+/* ===== RESPONSIVO ===== */
+
+@media (max-width: 768px) {
+  .nav-mobile-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 768px){
+
+    /* mostra hamburger */
+    .hamburger{
+        display: block;
+    }
+
+    /* NAV */
+    nav{
+        padding: 0 20px;
+    }
+
+    /* menu escondido por defeito */
+    .nav-list{
+        position: absolute;
+        top: 9vh;
+        left: 0;
+
+        width: 100%;
+        background-color: aliceblue;
+
+        flex-direction: column;
+        align-items: center;
+
+        gap: 20px;
+        padding: 20px 0;
+
+        display: none;
+    }
+
+    /* quando clicas no hamburger */
+    #menu-toggle:checked ~ .nav-list{
+        display: flex;
+    }
+
+    .nav-list li{
+        margin-left: 0;
+    }
+
+    /* HERO */
+    .hero-termos{
+        padding: 100px 20px 60px;
+    }
+
+    .hero-termos h1{
+        font-size: 30px;
+    }
+
+    .hero-termos p{
+        font-size: 15px;
+    }
+
+    /* CONTEÚDO */
+    .termos{
+        padding: 50px 20px;
+    }
+
+    .termos-container h2{
+        font-size: 24px;
+    }
+
+    .termos-container h3{
+        font-size: 18px;
+    }
+
+    .termos-container p,
+    .termos-container li{
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/contacto.css">
+     <link rel="stylesheet" href="../CSS/btn_voltar_topo.css">
+     <link rel="stylesheet" href="../CSS/dark-mode.css">
+    <title>Document</title>
+</head>
+<header>
+    <nav>
+
+        <a class="logo" href="index.html">Sabor Angolano</a>
+
+        <!-- checkbox escondido -->
+         <input type="checkbox" id="menu-toggle">
+
+        <div class="nav-mobile-actions">
+
+    <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Alternar tema claro/escuro" title="Alternar tema claro/escuro">
+        <span class="theme-toggle-icon">🌙</span>
+    </button>
+
+    <!-- ícone hamburger -->
+    <label for="menu-toggle" class="hamburger">
+        ☰
+    </label>
+
+</div>
+
+        <ul class="nav-list">
+             <li><a href="index.html">Home</a></li>
+            <li><a href="Sobre_nós.htm">Sobre nós</a></li>
+            <li><a href="Produto.html">Produtos e Serviços</a></li>
+            <li><a href="Galeria.html">Galeria de fotos</a></li>
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+            <li><a href="contacto.html">Contactos</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+<body>
+    <section class="hero-contacto">
+    <h1>Contactos</h1>
+    <p>Entre em contacto ou faça a sua reserva</p>
+</section>
+
+<section class="contacto">
+
+    <!-- LADO ESQUERDO -->
+    <div class="info-contacto">
+
+        <h2>Informações de Contacto</h2>
+
+        <div class="info-box">
+            <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+
+            <div>
+                <h3>Morada</h3>
+                <p>Rua da Gastronomia, 123</p>
+                <p>1000-001 Luanda</p>
+                <p>Angola</p>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <div class="icon"><i class="fa-solid fa-phone"></i></div>
+
+            <div>
+                <h3>Telefone</h3>
+                <p>+244 987 654 321</p>
+                <p>+244 936 590 905 (Móvel)</p>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+
+            <div>
+                <h3>Email</h3>
+                <p>info@saborangolano.pt</p>
+                <p>reservas@saborangolano.pt</p>
+            </div>
+        </div>
+
+         <div class="info-box">
+            <div class="icon"><i class="fa-solid fa-clock"></i></div>
+
+            <div>
+                <h3>Horário</h3>
+                <p>Segunda a Sexta: 12h - 15h / 19h - 23h</p>
+                <p>Sábado e Domingo: 12h - 15h / 19h - 23h30</p>
+            </div>
+        </div>
+
+        <div class="social-box">
+            <h3>Siga-nos nas redes sociais</h3>
+
+            <!-- WHATSAPP CTA -->
+            <a href="https://wa.me/244923245678" target="_blank" class="whatsapp-cta">
+                <div class="whatsapp-cta__icon"><i class="fa-brands fa-whatsapp"></i></div>
+                <div>
+                    <strong>Prefere o WhatsApp?</strong>
+                    <span>Clique aqui para iniciar uma conversa directa com a nossa equipa</span>
+                </div>
+                <i class="fa-solid fa-arrow-right whatsapp-cta__arrow"></i>
+            </a>
+
+            <!-- INSTAGRAM CTA -->
+            <a href="https://www.instagram.com" target="_blank" class="whatsapp-cta instagram-cta">
+                <div class="whatsapp-cta__icon"><i class="fa-brands fa-instagram"></i></div>
+                <div>
+                    <strong>Siga-nos no Instagram</strong>
+                    <span>Veja fotos dos nossos pratos e bastidores</span>
+                </div>
+                <i class="fa-solid fa-arrow-right whatsapp-cta__arrow"></i>
+            </a>
+
+            <!-- FACEBOOK CTA -->
+            <a href="https://www.facebook.com" target="_blank" class="whatsapp-cta facebook-cta">
+                <div class="whatsapp-cta__icon"><i class="fa-brands fa-facebook-f"></i></div>
+                <div>
+                    <strong>Visite a nossa página no Facebook</strong>
+                    <span>Fique a par de eventos e novidades</span>
+                </div>
+                <i class="fa-solid fa-arrow-right whatsapp-cta__arrow"></i>
+            </a>
+
+            <!-- CARTÃO DE LOCALIZAÇÃO -->
+            <a href="https://www.google.com/maps?q=Rua+da+Gastronomia,123,Luanda,Angola" target="_blank" class="mapa-card">
+                <div class="mapa-card__icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                <h3 class="mapa-card__titulo">Luanda, Angola</h3>
+                <p class="mapa-card__subtitulo">Benfica · Atendimento por marcação</p>
+                <span class="mapa-card__btn">
+                    <i class="fa-solid fa-location-arrow"></i> Abrir no Google Maps
+                </span>
+            </a>
+
+        </div>
+    </div>
+
+    <!-- LADO DIREITO -->
+
+    <div class="formulario">
+        <h2>Fazer Reserva</h2>
+
+        <form onsubmit="return validarFormulario(event)">
+
+            <div class="campo">
+                <label>Nome Completo *</label>
+                <input type="text" id="nome" required>
+            </div>
+
+            <div class="linha">
+                <div class="campo">
+                    <label>Email *</label>
+                    <input type="email" id="email" required>
+                </div>
+
+                <div class="campo">
+                    <label>Telefone *</label>
+                    <input type="tel" id="telefone" required>
+                </div>
+            </div>
+
+            <div class="linha">
+                <div class="campo">
+                    <label>Data *</label>
+                   <input type="date" id="data" required>
+                </div>
+
+                <div class="campo">
+                    <label>Hora *</label>
+                    <input type="time" id="hora" required>
+                </div>
+            </div>
+
+            <div class="campo">
+                <label>Número de Pessoas *</label>
+                <select id="pessoas" required>
+                    <option value="">Selecione...</option>
+                    <option value="1">1 Pessoa</option>
+                    <option value="2">2 Pessoas</option>
+                    <option value="3">3 Pessoas</option>
+                    <option value="4">4 Pessoas</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label>Mensagem</label>
+                <textarea rows="6" placeholder="Alergias:&#10;Preferências:&#10;Ocasião especial:"></textarea>
+            </div>
+
+            <div class="campo campo-checkbox">
+    <input type="checkbox" id="aceita-termos" required>
+    <label for="aceita-termos">
+       Li e aceito que os meus dados sejam usados
+        de acordo com <a href="política_e_privacidade.html" target="_blank">Política de Privacidade</a>
+    </label>
+</div>
+
+            <button type="submit" class="btn-form">Fazer Reserva</button>
+        </form>
+    </div>
+
+</section>
+
+
+
+<div class="modal-overlay" id="meuModal">
+    <div class="modal-box">
+        <div class="modal-icon">✅</div>
+        <h3>Reserva Efetuada!</h3>
+        <p>A sua reserva foi registada com sucesso.</p>
+        <button class="modal-btn" onclick="fecharModal()">Excelente</button>
+    </div>
+</div>
+
+<script src="../JS/Form.js"> </script>
+
+<button type="button" id="back-to-top" class="back-to-top" aria-label="Voltar ao topo" title="Voltar ao topo">
+    ↑
+</button>
+<script src="../JS/Btn_voltar_topo.js"></script>
+<script src="../JS/theme.js"></script>
+
+</body>
+</html>
