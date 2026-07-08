@@ -17,16 +17,17 @@ body{
 /* ===== NAV ===== */
 nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     background-color: aliceblue;
     height: 9vh;
     position: fixed;
-    width: 100%;        
-    top: 0;            
+    width: 100%;
+    top: 0;
     left: 0;
     z-index: 10;
+    padding: 0 40px;
 }
 
 .nav-list{
@@ -40,7 +41,6 @@ nav{
   margin-left: 32px;
   
 }
-
 .nav-list a {
     position: relative;
     display: inline-block;
